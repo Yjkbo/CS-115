@@ -1,0 +1,80 @@
+/* Name: Jacob Castaneda
+ * Project: 10d 
+ * Instructor: Sister Kristi Hays
+ * Date: March 10, 2023
+ * * Description: Lab-10d: Switch Statements for Different apostles
+ */
+
+package Week11;
+import java.util.Scanner;
+public class Lab11b {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+Scanner in = new Scanner (System.in);//for user input
+
+
+
+//variables
+boolean done = false;
+String input = "a";
+
+System.out.println("This program will show the name of an Apostle in their leadership role. ");		
+System.out.println("\nEnter a number between 1 and 15 to display the apostle of your choice. (Hit enter twice when done)");		
+	
+while(!input.equals("")) {
+
+//Switch loop begins
+input= in.nextLine();
+String Apostle="";
+switch (input) {
+case "1":
+Apostle = " Russell M Nelson ";
+break;
+case"2":
+Apostle= " Daling oaks ";
+break;
+case"3":
+Apostle="M Rusell Ballard";
+case"4":
+Apostle = "Jefreey R Holland";
+break;
+case "5":
+Apostle = "Henry B Eyring";
+break;
+case"6":
+Apostle= "Dieter F uchdorft";
+break;
+case"7":
+Apostle="David A Bednard";
+case"8":
+Apostle= "Quentin L Cook";
+break;
+case "9":
+Apostle = "D Tood Christoferson";
+break;
+case"10":
+Apostle= "Neil L Andersen";
+break;
+case"11":
+Apostle="Ronald A Rasband";
+case"12":
+Apostle= " Gary E Stevenson";
+break;
+case "13":
+Apostle = "Dale G Redlund";
+break;
+case"14":
+Apostle= "Gerrit W  Gong";
+break;
+case"15":
+Apostle= "Ulisses Soares";	
+default:
+Apostle = "is not a valid choice .Try again!";
+}//end of Switch Statement
+System.out.println(" Number "+ input + " is " + Apostle);
+}//end of while Statement
+			
+}//end of main method
+
+}//end of lab11b
